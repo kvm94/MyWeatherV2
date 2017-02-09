@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyWeatherV2.Views.MyCityPage">
+  <StackLayout>
+    <ActivityIndicator IsRunning="{Binding IsBusy}"/>
+    <Grid>
+      
+      <Label Text="City Info" FontSize="20" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center"/>
+      
+      <Label Text="Name" FontAttributes="Bold"     Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="{Binding Weather.city_info.name}"       Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+      <Label Text="Country" FontAttributes="Bold"  Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="{Binding Weather.city_info.country}"    Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center"/>
+      <Label Text="Latitude" FontAttributes="Bold" Grid.Row="3" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="{Binding Weather.city_info.latitude}"        Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center"/>
+      <Label Text="Longitude" FontAttributes="Bold" Grid.Row="4" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="{Binding Weather.city_info.longitude}"  Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center"/>
+      <Label Text="Elevation" FontAttributes="Bold" Grid.Row="5" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="{Binding Weather.city_info.elevation}"  Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="Center"/>
+      <Label Text="Sunrise"  FontAttributes="Bold" Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="{Binding Weather.city_info.sunrise}"    Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center"/>
+      <Label Text="Sunset"  FontAttributes="Bold"  Grid.Row="7" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="{Binding Weather.city_info.sunset}"    Grid.Row="7" Grid.Column="1" HorizontalTextAlignment="Center"/>
+      
+      <Label Text="Current Condition" FontAttributes="Bold" FontSize="20" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center"/>
+
+      <Label Text="Date" FontAttributes="Bold"   Grid.Row="9" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="{Binding Weather.current_condition.date}"    Grid.Row="9" Grid.Column="1" HorizontalTextAlignment="Center"/>
+      <Label Text="Hour" FontAttributes="Bold"   Grid.Row="10" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="{Binding Weather.current_condition.hour}"    Grid.Row="10" Grid.Column="1" HorizontalTextAlignment="Center"/>
+      <Label Text="Temp" FontAttributes="Bold"   Grid.Row="11" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="{Binding Weather.current_condition.tmp}"    Grid.Row="11" Grid.Column="1" HorizontalTextAlignment="Center"/>
+      <Label Text="Wind Speed" FontAttributes="Bold" Grid.Row="12" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="{Binding Weather.current_condition.wnd_spd}" Grid.Row="12" Grid.Column="1" HorizontalTextAlignment="Center"/>
+      <Label Text="Wind Guest" FontAttributes="Bold"  Grid.Row="13" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="{Binding Weather.current_condition.wnd_gust}"    Grid.Row="13" Grid.Column="1" HorizontalTextAlignment="Center"/>
+      <Label Text="Wind Direction" FontAttributes="Bold" Grid.Row="14" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="{Binding Weather.current_condition.wnd_dir}"    Grid.Row="14" Grid.Column="1" HorizontalTextAlignment="Center"/>
+      <Label Text="Pressure" FontAttributes="Bold" Grid.Row="15" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="{Binding Weather.current_condition.pressure}"    Grid.Row="15" Grid.Column="1" HorizontalTextAlignment="Center"/>
+      <Label Text="Humidity" FontAttributes="Bold"   Grid.Row="16" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="{Binding Weather.current_condition.humidity}"    Grid.Row="16" Grid.Column="1" HorizontalTextAlignment="Center"/>
+      <Label Text="Condition" FontAttributes="Bold" Grid.Row="17" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="{Binding Weather.current_condition.condition}"    Grid.Row="17" Grid.Column="1" HorizontalTextAlignment="Center"/>
+    </Grid>
+  </StackLayout>
+</ContentPage>
